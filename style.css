@@ -1,0 +1,171 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fdfdfd;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+/* Pages */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.page { display: none; }
+.page.active { display: block; }
+
+/* Tasks section */
+#tasks {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#add-btn, #clear-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #27ae60;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#add-btn:hover, #clear-btn:hover {
+  background: #1e8449;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+li button {
+  border: none;
+  background: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+li button:hover {
+  background: #c0392b;
+}
+
+/* Forms (About + Contact) */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+form button {
+  align-self: flex-start;
+  background: #2c3e50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+form button:hover {
+  background: #1a252f;
+}

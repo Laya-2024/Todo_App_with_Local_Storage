@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📝 Todo Web Application</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('tasks')">Tasks</a></li>
+        <li><a href="#" onclick="showPage('about')">About</a></li>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <h2>Welcome</h2>
+      <p>This Todo App helps you manage tasks easily. Navigate to the Tasks page to get started.</p>
+    </section>
+
+    <section id="tasks" class="page">
+      <h2>Manage Your Tasks</h2>
+      <div class="input-area">
+        <input type="text" id="todo-input" placeholder="Enter a new task">
+        <button id="add-btn">Add</button>
+      </div>
+      <ul id="todo-list"></ul>
+      <div class="actions">
+        <button id="clear-btn">Clear All</button>
+      </div>
+    </section>
+
+    <section id="about" class="page">
+     
+      
+
+      <h3>Tell Us What You Need</h3>
+      <form id="aboutForm">
+        <label for="feature">Feature Request</label>
+        <input id="feature" type="text" required>
+
+        <label for="reason">Why is it needed?</label>
+        <textarea id="reason" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="contact" class="page">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
